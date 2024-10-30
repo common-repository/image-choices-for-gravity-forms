@@ -1,0 +1,92 @@
+span.img_pick_preview {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+    line-height: 0;
+    height: 30px;
+    width: 30px;
+}
+
+span.image_preview_box {
+    display: inline-block;
+    border: 1px solid #DFDFDF;
+    border-radius: 3px;
+    padding: 2px;
+    margin: 0 2px;
+    position: relative;
+    z-index: 1;
+    height: 30px;
+}
+
+span.image_preview_box span.remove_pick_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #000;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+span.image_preview_box:hover span.remove_pick_img {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+#gform_setting_pcafe_imgp_color .wp-color-result-text {
+    background: #fff;
+    line-height: 35px;
+    display: inline-block;
+    height: 35px;
+    border-radius: 0 4px 4px 0;
+    margin-left: 43px;
+    font-size: 12px;
+    width: 90px;
+    border-left: 1px solid #3e7da6;
+}
+
+#gform_setting_pcafe_imgp_color .button {
+    height: 37px;
+    padding: 0;
+    width: auto;
+    border-radius: 4px;
+}
+
+#gform_setting_pcafe_imgp_color .wp-picker-container {
+    margin-top: 2px !important;
+    position: relative;
+}
+
+#gform_setting_pcafe_imgp_color .wp-picker-container .wp-picker-holder {
+    position: absolute;
+    top: 45px;
+    z-index: 9999;
+}
+
+#gform_setting_pcafe_imgp_color .wp-picker-container .wp-picker-input-wrap {
+    width: auto;
+    margin-left: 10px;
+}
+
+#gform_setting_pcafe_imgp_color .wp-picker-container .wp-picker-input-wrap label,
+#gform_setting_pcafe_imgp_color .wp-picker-container .wp-picker-input-wrap .button {
+    width: 100px;
+    display: inline-block;
+}
+
+#gform_setting_pcafe_imgp_color .wp-picker-container .wp-picker-input-wrap label {
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+
+#gform_setting_pcafe_imgp_color #pcafe_imgp_color {
+    padding: 8px 14px !important;
+    line-height: 20px;
+    width: auto;
+}

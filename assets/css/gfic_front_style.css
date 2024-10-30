@@ -1,0 +1,218 @@
+.pc_image_choice .gfield_radio,
+.pc_image_choice .gfield_checkbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pc_image_choice .gfield_radio .gchoice,
+.pc_image_choice .gfield_checkbox .gchoice {
+    width: 150px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+
+.pc_image_choice .gfield_radio .gchoice input[type=radio],
+.pc_image_choice .gfield_checkbox .gchoice input[type=checkbox] {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    z-index: -99;
+}
+
+.pc_image_choice .gfield_radio .gchoice label,
+.pc_image_choice .gfield_checkbox .gchoice label {
+    height: 100%;
+    width: 100%;
+    max-width: 100% !important;
+    display: flex !important;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+    border: 2px solid #f0f0f0;
+    font-size: 14px !important;
+    line-height: 1;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.pc_image_choice .gfield_radio .gchoice label img,
+.pc_image_choice .gfield_checkbox .gchoice label img {
+    margin-bottom: 12px;
+    width: 100%;
+    max-width: 100%;
+    max-height: 118px;
+    object-fit: cover;
+}
+
+.pc_image_choice .gfield_radio .gchoice label:hover,
+.pc_image_choice .gfield_checkbox .gchoice label:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.pc_image_choice .gfield_radio .gchoice input:checked+label,
+.pc_image_choice .gfield_checkbox .gchoice input:checked+label {
+    border-color: #bdbdbd;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+
+/* New Design */
+
+.pcafe_image_picker .gfield_checkbox .gchoice input[type=checkbox],
+.pcafe_image_picker .gfield_radio .gchoice input[type=radio] {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    z-index: -99;
+}
+
+.pcafe_image_picker .gfield_checkbox .gchoice label,
+.pcafe_image_picker .gfield_radio .gchoice label {
+    width: 100%;
+    max-width: 100%;
+    background: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: 1px solid #f1f1f1;
+    transition: 0.3s;
+    margin: 0;
+}
+
+.pcafe_image_picker .gfield_checkbox .gchoice input:checked+label,
+.pcafe_image_picker .gfield_radio .gchoice input:checked+label {
+    border-color: #0077FF;
+}
+
+.pcafe_image_picker .gfield_checkbox .gchoice input:checked+label .pcafe_imgp_text,
+.pcafe_image_picker .gfield_radio .gchoice input:checked+label .pcafe_imgp_text {
+    color: #0077FF;
+}
+
+.pcafe_image_picker .gfield_checkbox .gchoice label .pcafe_imgp_text,
+.pcafe_image_picker .gfield_radio .gchoice label .pcafe_imgp_text {
+    font-size: 15px;
+    padding: 10px 0 5px;
+    display: block;
+    line-height: 20px;
+}
+
+.pcafe_image_picker .gfield_checkbox .gchoice label img,
+.pcafe_image_picker .gfield_radio .gchoice label img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    max-width: 100%;
+    width: 100%;
+}
+
+.pcafe_image_picker .gfield_checkbox .gchoice,
+.pcafe_image_picker .gfield_radio .gchoice {
+    display: flex;
+}
+
+.pcafe_image_picker .gfield_checkbox .gchoice .pcafe_imgp_wrap,
+.pcafe_image_picker .gfield_radio .gchoice .pcafe_imgp_wrap {
+    position: relative;
+    display: block;
+    text-align: center;
+    height: 140px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.pcafe_image_picker .gfield_checkbox .gchoice .pcafe_imgp_wrap:before,
+.pcafe_image_picker .gfield_radio .gchoice .pcafe_imgp_wrap:before {
+    position: absolute;
+    content: '\2713';
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    font-size: 20px;
+    text-align: center;
+    line-height: 31px;
+    color: #fff;
+    right: 10px;
+    bottom: -15px;
+    transition: 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 99;
+    background-color: #0077FF;
+}
+
+.pcafe_image_picker .gfield_checkbox .gchoice input:checked+label .pcafe_imgp_wrap:before,
+.pcafe_image_picker .gfield_radio .gchoice input:checked+label .pcafe_imgp_wrap:before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.pcafe_imgp_col_auto .gfield_checkbox .gchoice,
+.pcafe_imgp_col_auto .gfield_radio .gchoice {
+    width: 190px;
+}
+
+.pcafe_imgp_col_auto .gfield_checkbox,
+.pcafe_imgp_col_auto .gfield_radio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.pc_image_choice.pcafe_imgp_col_auto .gfield_checkbox .gchoice,
+.pc_image_choice.pcafe_imgp_col_auto .gfield_radio .gchoice {
+    width: 150px;
+}
+
+.pcafe_imgp_admin .gfield_checkbox .gchoice,
+.pcafe_imgp_admin .gfield_radio .gchoice {
+    width: 190px;
+}
+
+.pcafe_imgp_admin .gfield_radio,
+.pcafe_imgp_admin .gfield_checkbox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gfield.pcafe_imgp_admin .gfield_radio label,
+.gfield.pcafe_imgp_admin .gfield_checkbox label {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.pc_image_choice.pcafe_imgp_col_auto .gfield_radio,
+.pc_image_choice.pcafe_imgp_col_auto .gfield_checkbox {
+    gap: unset;
+}
+
+
+/**
+*   Responsive
+*/
+
+
+@media only screen and (max-width: 767px) {
+
+    .pc_image_choice .gfield_radio .gchoice,
+    .pc_image_choice .gfield_checkbox .gchoice {
+        width: calc(50% - 9px);
+        margin-right: 14px;
+    }
+
+    .pc_image_choice .gfield_radio .gchoice:nth-child(2n),
+    .pc_image_choice .gfield_checkbox .gchoice:nth-child(2n) {
+        margin-right: 0;
+    }
+
+}
